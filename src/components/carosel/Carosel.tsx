@@ -48,7 +48,7 @@ const Carosel = () => {
               </div>
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
-              <Button>Default button</Button>
+              <Button>Ücretsiz Başlat</Button>
             </li>
           ))}
         </ul>
