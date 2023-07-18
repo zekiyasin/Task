@@ -1,0 +1,59 @@
+.products .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1c3257;
+  padding: 0;
+  margin: auto;
+}
+
+.content ul {
+  color: #1c3257;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.description h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: 800;
+  color: #1c3257;
+  margin: 0;
+}
+.description p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  width: 25%;
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.card p {
+  font-weight: 400;
+  color: #1c3257;
+}
+
+.card h3 {
+  font-weight: 800;
+  color: #1c3257;
+}
+.card a{
+  display: flex;
+  width: fit-content;
+}
