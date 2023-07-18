@@ -7,7 +7,7 @@ const Footer = () => {
   ]
   return (
     <section className='footer'>
-      {data.map((item) => (<div>{item}</div>))}
+      {data.map((item) => (<a href='/'>{item}</a>))}
 
     </section>
   )

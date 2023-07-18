@@ -8,5 +8,9 @@
     justify-content: space-between;
     color: #1c3257;
     font-weight: 600;
-    font-size: large
+    font-size: large;
+}
+.footer a{
+    color: #1c3257;
+    text-decoration: none;
 }
