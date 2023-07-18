@@ -1,0 +1,54 @@
+.carosel {
+  background-image: url(../../images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  height: 700px;
+  width: 100%;
+}
+
+.carosel-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+.carosel-text h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.carosel-text p {
+  font-size: large;
+  font-weight: 300;
+}
+
+.carosel-container ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carosel-card {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  color: #1c3257;
+  background-color: #fff;
+  padding: 1.8rem;
+  text-decoration: none;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+.icon-box {
+    background-color: #0052CC;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 5px;
+}
