@@ -5,6 +5,7 @@
   "dependencies": {
     "@atlaskit/atlassian-navigation": "^2.6.13",
     "@atlaskit/avatar": "^21.3.7",
+    "@atlaskit/button": "^16.8.2",
     "@atlaskit/notification-indicator": "^9.1.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",

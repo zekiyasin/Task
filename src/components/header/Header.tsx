@@ -3,7 +3,6 @@ import logo from "../../images/logo.png";
 
 import {
   AtlassianNavigation,
-  CustomProductHome,
   PrimaryButton,
   Search,
   Settings,
@@ -15,14 +14,11 @@ import Avatar, { AvatarItem } from "@atlaskit/avatar";
 import { NotificationIndicator } from "@atlaskit/notification-indicator";
 
 const Header = () => {
-  const AtlassianProductHome = () => (<CustomProductHome
-  href="/"
-  iconAlt="Glomil"
-  iconUrl={logo}
-  logoAlt="Glomil"
-  logoUrl={logo}
-  logoMaxWidth={300}
-/>);
+  const AtlassianProductHome = () => (
+    <a href="/">
+      <img src={logo} alt="logo"  height="75px" />
+    </a>
+  );
   const DefaultSettings = () => <Settings tooltip="Product settings" />;
   const NotificationsBadge = () => (
     <NotificationIndicator

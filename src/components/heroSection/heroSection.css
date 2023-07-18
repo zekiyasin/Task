@@ -1,0 +1,32 @@
+.hero {
+    height: 400px;
+    background-color: #1c3257;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 65%;
+    margin: auto;
+    gap: 5rem;
+}
+
+.content {
+    color: white;
+
+}
+
+.content h1 {
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.content p {
+    font-size: large;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
