@@ -1,4 +1,5 @@
 import React from 'react'
+import "./sentiment.css"
 
 const Sentiment = () => {
   return (

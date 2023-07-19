@@ -1,4 +1,5 @@
 import React from 'react'
+import "./bots.css"
 
 const Bots = () => {
   return (

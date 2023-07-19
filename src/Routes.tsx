@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes as Rotalar } from "react-router-dom";
 import Home from "./pages/Home";
-import Bots from "./pages/Bots";
-import Sentiment from "./pages/Sentiment";
+import Bots from "./pages/bots/Bots";
+import Sentiment from "./pages/sentiment/Sentiment";
 import Hizmetler from "./pages/hizmetler/Hizmetler";
 
 const Routes = () => {
