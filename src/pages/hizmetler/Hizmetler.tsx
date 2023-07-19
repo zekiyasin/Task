@@ -1,12 +1,20 @@
-import React from "react";
-import "./carosel.css";
+import React from 'react'
+import "./hizmetler.css"
+import SideBar from '../../components/sideBar/SideBar'
+
+
+import ArrowRightIcon from '@atlaskit/icon/glyph/arrow-right';
+import { Box } from '@atlaskit/primitives';
+
+
 import AppSwitcherIcon from "@atlaskit/icon/glyph/app-switcher";
 import IssuesIcon from "@atlaskit/icon/glyph/issues";
 import {BsGraphUpArrow} from "react-icons/bs";
 import {MdGTranslate} from "react-icons/md";
-import { CaroselCard } from "../caroselCard";
+import { CaroselCard } from '../../components/caroselCard';
 
-const Carosel = () => {
+const Hizmetler = () => {
+
   const data = [
     {
       icon: <BsGraphUpArrow color="white" size="30" />,
@@ -30,15 +38,21 @@ const Carosel = () => {
     },
   ];
 
+
+
+
+
   return (
-    <section className="carosel">
-      <div className="carosel-container">
-        <div className="carosel-text">
-          <h2>Portal Live Products</h2>
+    <div className='hizmetler'>
+      <SideBar />
+      <div className='hizmet-section'>
+        <div className='text-section'>
+          <h2>Ücretsiz paketlere göz atın</h2>
           <p>
-            Basit sezgisel ve güzel deneyimler oluşturmak için Portal'ın
-            evrensel yazılım dilini kullanın.
+            Temeller, ilgi çekici düzenler ve uçtan uca kullanıcı deneyimleri oluşturmak için gereken yazılımsal öğelerdir.
           </p>
+          <a href="/hizmetler">Hizmetleri Keşfedin <Box><ArrowRightIcon size="medium" label="" /></Box>  </a>
+
         </div>
         <ul>
           {data.map((item, index) => (
@@ -46,9 +60,11 @@ const Carosel = () => {
           
           ))}
         </ul>
-      </div>
-    </section>
-  );
-};
 
-export default Carosel;
+        
+      </div>
+    </div>
+  )
+}
+
+export default Hizmetler

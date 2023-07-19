@@ -1,0 +1,13 @@
+.button-icon {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    text-decoration: none;
+    color: #1c3257;
+   
+}
+.side-section {
+    height: 100vh;
+}

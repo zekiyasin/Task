@@ -9,6 +9,7 @@
     "@atlaskit/icon": "^21.12.6",
     "@atlaskit/notification-indicator": "^9.1.2",
     "@atlaskit/primitives": "^1.0.2",
+    "@atlaskit/side-navigation": "^1.10.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",

@@ -35,20 +35,3 @@
   margin-right: auto;
 }
 
-.carosel-card {
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  color: #1c3257;
-  background-color: #fff;
-  padding: 1.8rem;
-  text-decoration: none;
-  list-style-type: none;
-  border-radius: 5px;
-}
-
-.icon-box {
-    background-color: #0052CC;
-    width: fit-content;
-    padding: 15px;
-    border-radius: 5px;
-}

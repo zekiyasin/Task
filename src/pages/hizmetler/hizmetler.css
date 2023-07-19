@@ -1,0 +1,35 @@
+.hizmetler {
+  display: flex;
+}
+
+.hizmet-section {
+  padding-left: 7rem;
+  padding-top: 2.5rem;
+}
+
+.hizmet-section ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 65%;
+  margin-top: 2rem;
+  
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 18%;
+}
+
+.text-section a {
+  display: flex;
+  gap: 0.2rem;
+  font-weight: 500;
+}
+
+.text-section p {
+  font-weight: 500;
+}
