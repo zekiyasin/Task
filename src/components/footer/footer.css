@@ -1,6 +1,6 @@
 .footer{
     display: flex;
-    width: 35%;
+    width: 45%;
     margin-top: 0;
     margin-bottom: 5rem;
     margin-left: auto;
@@ -13,4 +13,38 @@
 .footer a{
     color: #1c3257;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        color: #1c3257;
+        font-weight: 600;
+        font-size: large;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer{
+        display: flex;
+       
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 5rem;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        color: #1c3257;
+        font-weight: 600;
+        font-size: large;
+    }
+
 }

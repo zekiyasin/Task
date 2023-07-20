@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
-  height: 700px;
+  padding-bottom: 250px;
   width: 100%;
 }
 
@@ -26,7 +26,7 @@
   font-weight: 300;
 }
 
-.carosel-container ul {
+.carosel-table {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -34,4 +34,25 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media only screen and (max-width: 992px) {
+  .carosel-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carosel-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+
 

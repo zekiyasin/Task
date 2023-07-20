@@ -40,12 +40,12 @@ const Carosel = () => {
             evrensel yazılım dilini kullanın.
           </p>
         </div>
-        <ul>
+        <div className="carosel-table">
           {data.map((item, index) => (
             <CaroselCard icon={item.icon} desc={item.desc} title={item.title} key={index}/>
           
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
