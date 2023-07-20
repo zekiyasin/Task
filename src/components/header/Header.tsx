@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../images/logo.png";
+import "./header.css";
 
 import {
   AtlassianNavigation,
@@ -16,7 +17,7 @@ import { NotificationIndicator } from "@atlaskit/notification-indicator";
 const Header = () => {
   const AtlassianProductHome = () => (
     <a href="/">
-      <img src={logo} alt="logo"  height="75px" />
+      <img src={logo} alt="logo" height="75px" />
     </a>
   );
   const DefaultSettings = () => <Settings tooltip="Product settings" />;
@@ -52,23 +53,25 @@ const Header = () => {
   };
 
   return (
-    <AtlassianNavigation
-      label="site"
-      renderSearch={DefaultSearch}
-      renderSettings={DefaultSettings}
-      renderProfile={DefaultProfile}
-      renderNotifications={() => (
-        <Notifications badge={NotificationsBadge} tooltip="Notifications" />
-      )}
-      renderHelp={() => <Help tooltip="Get help" />}
-      primaryItems={[
-        <PrimaryButton href="/">Anasayfa</PrimaryButton>,
-        <PrimaryButton href="/hizmetler">Hizmetler</PrimaryButton>,
-        <PrimaryButton href="/paketler">Paketler</PrimaryButton>,
-        <PrimaryButton href="ürünler">Ürünler</PrimaryButton>,
-      ]}
-      renderProductHome={AtlassianProductHome}
-    />
+    <div className="header">
+      <AtlassianNavigation
+        label="site"
+        renderSearch={DefaultSearch}
+        renderSettings={DefaultSettings}
+        renderProfile={DefaultProfile}
+        renderNotifications={() => (
+          <Notifications badge={NotificationsBadge} tooltip="Notifications" />
+        )}
+        renderHelp={() => <Help tooltip="Get help" />}
+        primaryItems={[
+          <PrimaryButton href="/">Anasayfa</PrimaryButton>,
+          <PrimaryButton href="/hizmetler">Hizmetler</PrimaryButton>,
+          <PrimaryButton href="/paketler">Paketler</PrimaryButton>,
+          <PrimaryButton href="ürünler">Ürünler</PrimaryButton>,
+        ]}
+        renderProductHome={AtlassianProductHome}
+      />
+    </div>
   );
 };
 

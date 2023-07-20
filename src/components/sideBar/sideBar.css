@@ -1,3 +1,9 @@
+
+.side-container {
+    display: flex;
+    justify-content: center;
+}
+
 .button-icon {
     display: grid;
     grid-template-columns: auto auto;
@@ -9,5 +15,31 @@
    
 }
 .side-section {
-    height: 100vh;
+    height: calc(100vh - 56px);
+}
+
+.sidebar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    
+}
+
+.sidebar h2 {
+    color: #1c3257;
+    display: flex;
+    justify-content: start;
+    font-size: larger;
+    margin: 0.9rem
+    
+}
+
+.dikey {
+    margin: top 1rem;
+    border-left: 1px solid lightgray;
+ 
 }

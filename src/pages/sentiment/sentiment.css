@@ -1,0 +1,40 @@
+.sentiment {
+    display: flex;
+    color: #1c3257;
+}
+
+.sentiment-text p {
+    
+    font-weight: 600;
+    
+    
+}
+
+.sentiment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 2.5rem;
+    padding-top: 2.5rem;
+    width: calc(100% - 258px - 14rem);
+    gap: 1rem;
+}
+
+.sentiment-form-text {
+    display: grid;
+    grid-template-columns:  auto max-content;
+    gap: 1rem; 
+    align-items: center;
+    
+    
+    width: 100%;
+    
+}
+.sentiment-form {
+    width: 100%;
+}
+
+.mesaj {
+    width: 25%;
+}
