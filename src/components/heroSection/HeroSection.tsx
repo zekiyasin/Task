@@ -14,7 +14,7 @@ const HeroSection = () => {
           </p>
           <Button appearance="primary">Hadi Başlayalım</Button>
         </div>
-        <img src={hero} alt="hero" height={375}/>
+        <img className="hero-image" src={hero} alt="hero" height={375}/>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 .hizmetler {
   display: flex;
+  margin-top: 1rem;
 }
 
 .hizmet-section {

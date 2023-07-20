@@ -30,3 +30,17 @@
     line-height: 1.1;
 }
 
+
+@media only screen and (max-width: 992px) {
+    .hero-image {
+        display: none;
+    }
+    .container {
+        width: 80%;
+       
+    }
+}
+
+
+
+

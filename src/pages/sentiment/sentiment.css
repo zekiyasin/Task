@@ -1,40 +1,35 @@
 .sentiment {
-    display: flex;
-    color: #1c3257;
+  display: flex;
+  color: #1c3257;
+  margin-top: 1rem;
 }
 
 .sentiment-text p {
-    
-    font-weight: 600;
-    
-    
+  font-weight: 600;
 }
 
 .sentiment-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    padding-left: 2.5rem;
-    padding-top: 2.5rem;
-    width: calc(100% - 258px - 14rem);
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 2.5rem;
+  padding-top: 2.5rem;
+  width: calc(100% - 258px - 14rem);
+  gap: 1rem;
 }
 
 .sentiment-form-text {
-    display: grid;
-    grid-template-columns:  auto max-content;
-    gap: 1rem; 
-    align-items: center;
-    width: 100%;
-    
+  display: grid;
+  grid-template-columns: auto max-content;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
 }
 .sentiment-form {
-    width: 100%;
+  width: 100%;
 }
 
 .mesaj {
-    width: 20%;
+  width: 20%;
 }
-
-

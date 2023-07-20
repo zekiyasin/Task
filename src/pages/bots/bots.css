@@ -1,5 +1,6 @@
 .bots {
   display: flex;
+  margin-top: 1rem;
 }
 
 .bots-container {
