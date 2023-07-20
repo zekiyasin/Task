@@ -8,11 +8,12 @@
   margin: auto;
 }
 
-.content ul {
+.content div {
   color: #1c3257;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+ 
 }
 
 .description h1 {
@@ -42,6 +43,7 @@
   height: 100%;
   padding: 1rem;
   border: 1px solid black;
+  
 }
 
 .card p {
@@ -57,3 +59,22 @@
   display: flex;
   width: fit-content;
 }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 40%;
+  
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+  
+  }
+  
+}
+

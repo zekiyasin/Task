@@ -1,26 +1,59 @@
 import React from "react";
 import "./products.css";
-import ArrowRightIcon from '@atlaskit/icon/glyph/arrow-right';
-import { Box } from '@atlaskit/primitives';
+import ArrowRightIcon from "@atlaskit/icon/glyph/arrow-right";
+import { Box } from "@atlaskit/primitives";
 
 const Products = () => {
-
-
   const data = [
-    {name: "Block Explorer", description: "Search for real-time and historical information about the blockchain.", link: "/"},
-    {name: "Data Index", description: "Search for real-time and historical information about the blockchain.", link: "/"},
-    {name: "Bridge", description: "Search for real-time and historical information about the blockchain.", link: "/"},
-    {name: "Portal Sentiment ", description: "Search for real-time and historical information about the blockchain.", link: "/hizmetler/sentiment"},
-    {name: "Portal Network", description: "Search for real-time and historical information about the blockchain.", link: "/"},
-    {name: "Bots Explorer", description: "Search for real-time and historical information about the blockchain.", link: "/hizmetler/bots"},
-    {name: "Translate EV", description: "Search for real-time and historical information about the blockchain.", link: "/"},
-    {name: "Block Explorer", description: "Search for real-time and historical information about the blockchain.", link: "/"}
+    {
+      name: "Block Explorer",
+      description:
+        "Search for real-time and historical information about the blockchain.",
+      link: "/",
+    },
+    {
+      name: "Data Index",
+      description:
+        "Search for real-time and historical information about the blockchain.",
+      link: "/",
+    },
+    {
+      name: "Bridge",
+      description:
+        "Search for real-time and historical information about the blockchain.",
+      link: "/",
+    },
+    {
+      name: "Portal Sentiment ",
+      description:
+        "Search for real-time and historical information about the blockchain.",
+      link: "/hizmetler/sentiment",
+    },
+    {
+      name: "Portal Network",
+      description:
+        "Search for real-time and historical information about the blockchain.",
+      link: "/",
+    },
+    {
+      name: "Bots Explorer",
+      description:
+        "Search for real-time and historical information about the blockchain.",
+      link: "/hizmetler/bots",
+    },
+    {
+      name: "Translate EV",
+      description:
+        "Search for real-time and historical information about the blockchain.",
+      link: "/",
+    },
+    {
+      name: "Block Explorer",
+      description:
+        "Search for real-time and historical information about the blockchain.",
+      link: "/",
+    },
   ];
-
-
-
-
-
 
   return (
     <section className="products">
@@ -33,16 +66,20 @@ const Products = () => {
           </p>
         </div>
         <div className="content">
-            <ul>
-                {data.map((item, index) => (
-                    <li className="card" key={index}>
-                        <h3>{item.name}</h3>
-                        <p>{item.description}</p>
-                        <a href={item.link}>Hizmetleri Keşfedin <Box><ArrowRightIcon size="medium" label="" /></Box>  </a>
-
-                    </li>
-                ))}
-            </ul>
+          <div>
+            {data.map((item, index) => (
+              <li className="card" key={index}>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <a href={item.link}>
+                  Hizmetleri Keşfedin{" "}
+                  <Box>
+                    <ArrowRightIcon size="medium" label="" />
+                  </Box>{" "}
+                </a>
+              </li>
+            ))}
+          </div>
         </div>
       </div>
     </section>
