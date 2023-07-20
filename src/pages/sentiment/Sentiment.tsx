@@ -22,7 +22,8 @@ const Sentiment = () => {
           <Breadcrumbs>
             <BreadcrumbsItem iconBefore={Icon} href="/" text="Anasayfa" />
             <BreadcrumbsItem href="/hizmetler" text="Hizmetler" />
-            <BreadcrumbsItem href="/hizmetler/bots" text="Bots" />
+            <BreadcrumbsItem href="/textanalysis" text="Text Analysis" />
+            <BreadcrumbsItem href="/hizmetler/sentiment" text="Sentiment" />
           </Breadcrumbs>
         </div>
         <div className="sentiment-text">
@@ -53,28 +54,28 @@ const Sentiment = () => {
                   <h2>Sorgulama Alanı</h2>
                 </FormHeader>
 
-                <div className="sentiment-form-text">
+                <div className="form-margin">
                   <FormSection>
-                    <Field name="UserCount" label="">
-                      {({ fieldProps }: any) => (
-                        <Fragment>
-                          <TextArea
-                            placeholder="Enter long form text here"
-                            {...fieldProps}
-                     
-                          />
-                        </Fragment>
-                      )}
-                    </Field>
+                    <div className="sentiment-form-text">
+                      <Field name="UserCount" label="">
+                        {({ fieldProps }: any) => (
+                          <Fragment>
+                            <TextArea
+                              placeholder="Enter long form text here"
+                              {...fieldProps}
+                            />
+                          </Fragment>
+                        )}
+                      </Field>
+                      <Button appearance="primary">Sorgulama Yap</Button>
+                    </div>
                   </FormSection>
-
-                  <Button appearance="primary">Sorgulama Yap</Button>
                 </div>
               </form>
             )}
           </Form>
         </div>
-        
+
         <div className="mesaj">
           <SectionMessage title="" appearance="success">
             {" "}

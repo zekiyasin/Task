@@ -26,8 +26,6 @@
     grid-template-columns:  auto max-content;
     gap: 1rem; 
     align-items: center;
-    
-    
     width: 100%;
     
 }
@@ -38,3 +36,5 @@
 .mesaj {
     width: 25%;
 }
+
+
