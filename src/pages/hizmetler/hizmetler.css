@@ -35,55 +35,6 @@
   font-weight: 500;
 }
 
-
-@media only screen and (max-width: 768px) {
-  .big{
-    display: none;
-  }
-  .small{
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    justify-content: start;
-    align-items: start;
-    width: 90%;
-  }
-  .hizmetler {
-    display: flex;
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-   
-  }
-  .hizmet-liste {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    width: 65%;
-    margin-top: 2rem;
-    
-  }
-  .text-section {
-    display: flex;
-    flex-direction: column;
-    
-    
-    width: 90%;
-  }
-  .hizmet-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .small{
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 992px) {
   
   
@@ -110,4 +61,55 @@
     margin-bottom: 5rem;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  .big{
+    display: none;
+  }
+  .small{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    justify-content: start;
+    align-items: start;
+    width: 90%;
+  }
+  .hizmetler {
+    display: block;
+    flex-direction: column;
+   
+  }
+  .hizmet-liste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 85%;
+    margin-top: 2rem;
+    
+  }
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 90%;
+  }
+  .hizmet-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .small{
+    display: none;
+  }
+}
+
+
 
