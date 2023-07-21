@@ -36,7 +36,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .big{
     display: none;
   }
@@ -78,7 +78,7 @@
     margin-bottom: 5rem;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .small{
     display: none;
   }

@@ -33,3 +33,34 @@
 .mesaj {
   width: 20%;
 }
+
+@media only screen and (max-width: 768px) {
+  .sentiment {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+
+  }
+  .sentiment-container {
+    width: 90%;
+    padding: 0;
+    margin: 2rem;
+  }
+  .mesaj {
+    width: 50%;}
+  .sentiment-form-text {
+    display: block;
+    
+  }
+  .sentiment-form-text button{
+    margin-top: 1rem;
+  }
+
+}
+@media only screen and (min-width: 768px) {
+  
+}
+
+
