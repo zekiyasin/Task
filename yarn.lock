@@ -104,6 +104,19 @@
     "@atlaskit/primitives" "^1.0.0"
     "@babel/runtime" "^7.0.0"
 
+"@atlaskit/blanket@^12.4.0":
+  version "12.4.4"
+  resolved "https://registry.yarnpkg.com/@atlaskit/blanket/-/blanket-12.4.4.tgz#91beff09a4d5306161e839d756860bffe4658b37"
+  integrity sha512-4ubUKj1iABlW3CFwJ2DR2IK+pKN3LXBJt0WSae6woJkfSVMvYd6FMLyaIuVKgomO5qTFQ8I7AjshC8PNE5BoAA==
+  dependencies:
+    "@atlaskit/analytics-next" "^9.1.0"
+    "@atlaskit/codemod-utils" "^4.2.0"
+    "@atlaskit/ds-lib" "^2.2.0"
+    "@atlaskit/theme" "^12.5.0"
+    "@atlaskit/tokens" "^1.11.0"
+    "@babel/runtime" "^7.0.0"
+    "@emotion/react" "^11.7.1"
+
 "@atlaskit/breadcrumbs@^11.10.5":
   version "11.10.5"
   resolved "https://registry.yarnpkg.com/@atlaskit/breadcrumbs/-/breadcrumbs-11.10.5.tgz#8eaa3b2998f330d39d8ce09f162ff280c054027f"
@@ -143,6 +156,27 @@
   integrity sha512-ar5vFYakSfbpKziSyi0cE1sFt48gWrwixjgo5VdN8DiL/Tf0fMiscMNvAPe4cFnagTV6scXHyUc0NPArGqL0PQ==
   dependencies:
     "@babel/runtime" "^7.0.0"
+
+"@atlaskit/drawer@^7.5.3":
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/@atlaskit/drawer/-/drawer-7.5.3.tgz#e3b27dcbba69da424aab5207002130e39b1e1e16"
+  integrity sha512-05F7SjdoIidpznhkiPlm4sQ6MCL0eNTd/bPGyPl9nN8yQsGKjROgYIkAh4Z4BRVM9VU1uv9MPhJG8E58kzrrTg==
+  dependencies:
+    "@atlaskit/analytics-next" "^9.1.0"
+    "@atlaskit/blanket" "^12.4.0"
+    "@atlaskit/icon" "^21.12.0"
+    "@atlaskit/motion" "^1.4.0"
+    "@atlaskit/portal" "^4.3.0"
+    "@atlaskit/theme" "^12.5.0"
+    "@atlaskit/tokens" "^1.5.0"
+    "@babel/runtime" "^7.0.0"
+    "@emotion/react" "^11.7.1"
+    bind-event-listener "^2.1.1"
+    exenv "^1.2.2"
+    react-focus-lock "^2.5.2"
+    react-scrolllock "^5.0.1"
+    tiny-invariant "^1.2.0"
+    use-callback-ref "^1.2.3"
 
 "@atlaskit/dropdown-menu@^11.10.6":
   version "11.10.6"
@@ -5062,6 +5096,11 @@ execa@^5.0.0:
     signal-exit "^3.0.3"
     strip-final-newline "^2.0.0"
 
+exenv@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+  integrity sha512-Z+ktTxTwv9ILfgKCk32OX3n/doe+OcLTRtqK9pcL+JsP3J1/VW8Uvl4ZjLlKqeW4rzK4oesDOGMEMRIZqtP4Iw==
+
 exit@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
@@ -8467,6 +8506,13 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-scrolllock@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-scrolllock/-/react-scrolllock-5.0.1.tgz#da1cfb7b6d55c86ae41dbad5274b778c307752b7"
+  integrity sha512-poeEsjnZAlpA6fJlaNo4rZtcip2j6l5mUGU/SJe1FFlicEudS943++u7ZSdA7lk10hoyYK3grOD02/qqt5Lxhw==
+  dependencies:
+    exenv "^1.2.2"
+
 react-select@^5.4.0:
   version "5.7.4"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-5.7.4.tgz#d8cad96e7bc9d6c8e2709bdda8f4363c5dd7ea7d"
@@ -9745,7 +9791,7 @@ url-parse@^1.5.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
-use-callback-ref@^1.3.0:
+use-callback-ref@^1.2.3, use-callback-ref@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/use-callback-ref/-/use-callback-ref-1.3.0.tgz#772199899b9c9a50526fedc4993fc7fa1f7e32d5"
   integrity sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==

@@ -8,7 +8,7 @@
   padding-top: 2.5rem;
 }
 
-.hizmet-section ul {
+.hizmet-liste {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -34,3 +34,80 @@
 .text-section p {
   font-weight: 500;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .big{
+    display: none;
+  }
+  .small{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    justify-content: start;
+    align-items: start;
+    width: 90%;
+  }
+  .hizmetler {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+   
+  }
+  .hizmet-liste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 65%;
+    margin-top: 2rem;
+    
+  }
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 90%;
+  }
+  .hizmet-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .small{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  
+  
+  
+  .hizmet-liste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 75%;
+    margin-top: 2rem;
+    
+  }
+  .text-section {
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 90%;
+  }
+  .hizmet-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+}
+

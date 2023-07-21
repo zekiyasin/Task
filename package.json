@@ -7,6 +7,7 @@
     "@atlaskit/avatar": "^21.3.7",
     "@atlaskit/breadcrumbs": "^11.10.5",
     "@atlaskit/button": "^16.8.2",
+    "@atlaskit/drawer": "^7.5.3",
     "@atlaskit/dropdown-menu": "^11.10.6",
     "@atlaskit/flag": "^15.2.15",
     "@atlaskit/form": "^8.11.8",

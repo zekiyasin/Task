@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./hizmetler.css"
 import SideBar from '../../components/sideBar/SideBar'
+
+import Button from '@atlaskit/button/standard-button';
+
+import Drawer from '@atlaskit/drawer';
 
 
 import ArrowRightIcon from '@atlaskit/icon/glyph/arrow-right';
@@ -39,12 +43,28 @@ const Hizmetler = () => {
   ];
 
 
-
+  const [open, setOpen] = useState<boolean>(false);
 
 
   return (
     <div className='hizmetler'>
-      <SideBar />
+      <div className='resposive-side'>
+        <div className='big'>
+        <SideBar />
+        </div>
+        <div className='small'>
+        <Drawer onClose={() => setOpen(false)} isOpen={open}>
+        <SideBar />
+      </Drawer>
+      <Button appearance="primary" onClick={() => setOpen(true)}>
+        Open drawer
+      </Button>
+        
+        </div>
+
+      
+      </div>
+      
       <div className='hizmet-section'>
         <div className='text-section'>
           <h2>Ücretsiz paketlere göz atın</h2>
@@ -54,12 +74,12 @@ const Hizmetler = () => {
           <a href="/hizmetler">Hizmetleri Keşfedin <Box><ArrowRightIcon size="medium" label="" /></Box>  </a>
 
         </div>
-        <ul>
+        <div className='hizmet-liste'>
           {data.map((item, index) => (
             <CaroselCard icon={item.icon} desc={item.desc} title={item.title} key={index}/>
           
           ))}
-        </ul>
+        </div>
 
         
       </div>
