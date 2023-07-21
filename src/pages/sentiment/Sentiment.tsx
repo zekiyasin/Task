@@ -31,7 +31,7 @@ const Sentiment = () => {
         <SideBar />
       </Drawer>
       <Button appearance="primary" onClick={() => setOpen(true)}>
-        Open drawer
+      Hizmetler Menü
       </Button>
         
         </div>
