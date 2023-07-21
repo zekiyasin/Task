@@ -3,6 +3,7 @@
 ## Kullanılan Teknolojiler
 
 * Typescript
+* yarn
 * React
 * React Router
 * React-icons
