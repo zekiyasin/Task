@@ -1,6 +1,10 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import "./sentiment.css";
 import SideBar from "../../components/sideBar/SideBar";
+
+
+
+import Drawer from '@atlaskit/drawer';
 
 import Breadcrumbs, { BreadcrumbsItem } from "@atlaskit/breadcrumbs";
 import HomeIcon from "@atlaskit/icon/glyph/home";
@@ -14,9 +18,26 @@ import SectionMessage from "@atlaskit/section-message";
 const Sentiment = () => {
   const Icon = <HomeIcon label=" icon" size="medium" />;
 
+  const [open, setOpen] = useState<boolean>(false);
+
   return (
     <div className="sentiment">
-      <SideBar />
+      <div className='resposive-side'>
+        <div className='big'>
+        <SideBar />
+        </div>
+        <div className='small'>
+        <Drawer onClose={() => setOpen(false)} isOpen={open}>
+        <SideBar />
+      </Drawer>
+      <Button appearance="primary" onClick={() => setOpen(true)}>
+        Open drawer
+      </Button>
+        
+        </div>
+
+      
+      </div>
       <div className="sentiment-container">
         <div>
           <Breadcrumbs>

@@ -1,10 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import "./bots.css";
 import SideBar from "../../components/sideBar/SideBar";
 
 import Breadcrumbs, { BreadcrumbsItem } from "@atlaskit/breadcrumbs";
 import HomeIcon from "@atlaskit/icon/glyph/home";
 import TextArea from "@atlaskit/textarea";
+
+
+
+
+import Drawer from '@atlaskit/drawer';
 
 import Button from "@atlaskit/button/standard-button";
 import Form, {
@@ -18,6 +23,10 @@ import Select, { ValueType } from "@atlaskit/select";
 import SectionMessage from "@atlaskit/section-message";
 
 const Bots = () => {
+
+  const [open, setOpen] = useState<boolean>(false);
+
+
   interface Option {
     label: string;
     value: string;
@@ -30,7 +39,22 @@ const Bots = () => {
   const Icon = <HomeIcon label=" icon" size="medium" />;
   return (
     <div className="bots">
-      <SideBar />
+      <div className='resposive-side'>
+        <div className='big'>
+        <SideBar />
+        </div>
+        <div className='small'>
+        <Drawer onClose={() => setOpen(false)} isOpen={open}>
+        <SideBar />
+      </Drawer>
+      <Button appearance="primary" onClick={() => setOpen(true)}>
+        Open drawer
+      </Button>
+        
+        </div>
+
+      
+      </div>
       <div className="bots-container">
         <div>
           <Breadcrumbs>
