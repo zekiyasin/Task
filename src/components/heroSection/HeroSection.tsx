@@ -1,6 +1,5 @@
 import React from "react";
 import "./heroSection.css";
-import hero from "../../images/hero.png";
 import Button from '@atlaskit/button';
 const HeroSection = () => {
   return (
@@ -14,7 +13,7 @@ const HeroSection = () => {
           </p>
           <Button appearance="primary">Hadi Başlayalım</Button>
         </div>
-        <img className="hero-image" src={hero} alt="hero" height={375}/>
+        <img className="hero-image" src="https://atlassian.design/static/43b3a69216eac32c2ba8799f74e5e128/homepage@2x.png" alt="hero" height={375}/>
       </div>
     </section>
   );
