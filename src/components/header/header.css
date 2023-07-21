@@ -1,0 +1,125 @@
+.header-992 {
+    padding: 0 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-992 {
+        padding: 0 0px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header-992 {
+        display: none;
+    }
+   
+}
+@media only screen and (min-width: 992px) {
+    .header-768 {
+        display: none;
+    }
+   
+}
+
+@media only screen and (max-width: 768px) {
+    .header-768 {
+        display: none;
+    }
+   
+}
+@media only screen and (min-width: 768px) {
+    .header-600 {
+        display: none;
+    }
+   
+}
+
+
+.menu {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.55s cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  }
+  .menu-close {
+    display: flex;
+    justify-content: end;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    margin-right: 28px;
+    
+  }
+  .btn-cls {
+    display: flex;
+    background: transparent;
+    border: none;
+    
+  }
+
+  .ham-liste {
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    gap: 10px;
+    font-size: xx-large;
+    font-weight: 800;
+    color: white;
+    margin-left: 36px;
+    
+    }
+    .ham-el {
+        text-decoration: none;
+        list-style-type: none
+    }
+    .ham-el a{
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+        transition: all 0.2s ease;
+    }
+
+    .ham-el a:hover {
+        color: lightskyblue;
+        transition: all 0.2s ease;
+    }
+
+  
+
+  .close-btn {
+    color: white;
+    transition: all 0.2s ease;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+ 
+  }
+  .close-btn:hover {
+    color: lightskyblue;
+    transition: all 0.2s ease;
+
+  }
+  
+  .menu[data-menu-open="true"] {
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+
+  }
+
+  .ham-el a[data-active="true"] {
+    color: lightskyblue;
+    
+}
+
+
+  
+
